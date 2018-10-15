@@ -1,6 +1,6 @@
 # Cpp-stream
 Library to support functional-style operations on streams of elements.
-All non-termainal operations are lazy.
+All non-terminal operations are lazy.
 
 ## Usage
 
