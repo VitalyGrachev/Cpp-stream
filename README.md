@@ -6,21 +6,21 @@ All non-termainal operations are lazy.
 
 ### Construction
 
+Creates an infinite stream of values returned by given function
 ```cpp
-// Creates an infinite stream of values returned by given function
 Stream s([](){ return 1; });  // [ 1, 1, 1, 1, ... ]
 ```
+Creates stream of container elements
 ```cpp
 std::vector vec{ 1, 2, 3, 4, 5 };
-// Creates stream of container elements
 Stream s(vec);  // [ 1, 2, 3, 4, 5 ]
 ```
+Creates stream of initializer list elements
 ```cpp
-// Creates stream of initializer list elements
 Stream s({ 1, 2, 3, 4, 5 });  // [ 1, 2, 3, 4, 5 ]
 ```
+Creates stream of given elements
 ```cpp
-// Creates stream of given elements
 Stream s(1, 2, 3, 4, 5);  // [ 1, 2, 3, 4, 5 ]
 ```
 ### Non-terminal operations
